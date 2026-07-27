@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroVet from "@/assets/hero-vet.jpg";
+import clinicBuilding from "@/assets/clinic-building.jpg";
 import kennelSuite from "@/assets/kennel-suite.jpg";
 
 const TITLE = "Wagmore Veterinary & Boarding | Care and Kennel Suites";
@@ -60,59 +61,72 @@ const boarding = [
 function Index() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a href="#top" className="font-display text-xl font-semibold tracking-tight">
-          Wagmore
-          <span className="text-muted-foreground"> Vet &amp; Boarding</span>
-        </a>
-        <nav className="hidden gap-8 text-sm md:flex">
-          <a className="transition-colors hover:text-primary" href="#services">
-            Services
-          </a>
-          <a className="transition-colors hover:text-primary" href="#kennel">
-            Kennel
-          </a>
-          <a className="transition-colors hover:text-primary" href="#visit">
-            Visit
-          </a>
-        </nav>
-      </header>
-
       <main id="top">
-        <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pt-10 pb-20 md:grid-cols-2 md:pt-16">
-          <div>
-            <p className="text-sm tracking-[0.22em] text-muted-foreground uppercase">
-              Clinic &amp; kennel · Est. 2009
-            </p>
-            <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
-              Steady hands for your pet, a quiet room when you travel.
-            </h1>
-            <p className="mt-6 max-w-md text-lg text-muted-foreground">
-              {DESCRIPTION}
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <a
-                href="#visit"
-                className="bg-primary text-primary-foreground hover:bg-bark inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
-              >
-                Book an appointment
+        <section className="relative isolate min-h-[92vh] overflow-hidden">
+          <img
+            src={clinicBuilding}
+            alt="Exterior of the Wagmore veterinary clinic and boarding kennel at golden hour"
+            width={1920}
+            height={1088}
+            className="absolute inset-0 -z-20 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bark/90 via-bark/70 to-bark/25" />
+
+          <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-background">
+            <a href="#top" className="font-display text-xl font-semibold tracking-tight">
+              Wagmore
+              <span className="opacity-70"> Vet &amp; Boarding</span>
+            </a>
+            <nav className="hidden gap-8 text-sm md:flex">
+              <a className="opacity-80 transition-opacity hover:opacity-100" href="#services">
+                Services
               </a>
-              <a
-                href="#kennel"
-                className="border-border hover:bg-secondary inline-flex items-center rounded-full border px-7 py-3 text-sm font-semibold transition-colors"
-              >
-                See boarding suites
+              <a className="opacity-80 transition-opacity hover:opacity-100" href="#kennel">
+                Kennel
               </a>
+              <a className="opacity-80 transition-opacity hover:opacity-100" href="#visit">
+                Visit
+              </a>
+            </nav>
+          </header>
+
+          <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pt-16 pb-24 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
+            <div className="text-background">
+              <p className="text-sm tracking-[0.22em] uppercase opacity-75">
+                Clinic &amp; kennel · Est. 2009
+              </p>
+              <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
+                Steady hands for your pet, a quiet room when you travel.
+              </h1>
+              <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <a
+                  href="#visit"
+                  className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
+                >
+                  Book an appointment
+                </a>
+                <a
+                  href="#kennel"
+                  className="inline-flex items-center rounded-full border border-background/50 px-7 py-3 text-sm font-semibold transition-colors hover:bg-background/15"
+                >
+                  See boarding suites
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="overflow-hidden rounded-[2rem]" style={{ boxShadow: "var(--shadow-soft)" }}>
-            <img
-              src={heroVet}
-              alt="Veterinarian examining a golden retriever in a bright clinic room"
-              width={1408}
-              height={1008}
-              className="h-full w-full object-cover"
-            />
+            <div
+              className="hidden overflow-hidden rounded-[2rem] md:block"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <img
+                src={heroVet}
+                alt="Veterinarian examining a golden retriever in a bright clinic room"
+                width={1408}
+                height={1008}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </section>
 
