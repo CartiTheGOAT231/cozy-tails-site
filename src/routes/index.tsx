@@ -214,29 +214,35 @@ function Index() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-3">
             <div className="md:col-span-2">
               <h2 className="font-display text-3xl font-semibold md:text-4xl">
-                Visit the practice
+                Visit the clinic
               </h2>
               <p className="mt-4 max-w-md text-muted-foreground">
-                Call to book an exam or reserve a boarding suite. Holiday weeks fill up about a
-                month ahead.
+                Call to book an exam or reserve a boarding suite. Same-day sick visits are
+                available during open hours.
               </p>
+              <Link
+                to="/visit"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 mt-6 inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
+              >
+                Get directions
+              </Link>
             </div>
             <address className="space-y-3 text-sm not-italic">
-              <p className="font-semibold">Wagmore Veterinary &amp; Boarding</p>
+              <p className="font-semibold">Wadhams Road Animal Clinic</p>
               <p className="text-muted-foreground">
-                214 Millbrook Road
+                635 Wadhams Rd
                 <br />
-                Ashford, OR 97045
+                Kimball, MI 48074
               </p>
               <p>
-                <a className="hover:text-primary transition-colors" href="tel:+15035550142">
-                  (503) 555-0142
+                <a className="hover:text-primary transition-colors" href="tel:+18109876543">
+                  (810) 987-6543
                 </a>
               </p>
               <p className="text-muted-foreground">
-                Mon–Fri 7:30–18:00 · Sat 9:00–14:00
+                Wed &amp; Fri 9:00–15:00 · Thu &amp; Tue 8:00–12:00, 13:00–16:00
                 <br />
-                Boarding drop-off &amp; pick-up daily 8:00–17:00
+                Sat–Sun Closed
               </p>
             </address>
           </div>
