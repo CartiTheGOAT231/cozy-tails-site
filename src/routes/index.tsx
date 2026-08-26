@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroVet from "@/assets/hero-vet.jpg";
 import clinicBuilding from "@/assets/clinic-building.jpg";
 import kennelSuite from "@/assets/kennel-suite.jpg";
 
-const TITLE = "Wagmore Veterinary & Boarding | Care and Kennel Suites";
+const TITLE = "Wadhams Road Animal Clinic | Veterinary Care in Kimball, MI";
 const DESCRIPTION =
-  "Compassionate veterinary medicine and calm, spacious boarding suites for dogs and cats — wellness exams, surgery, dentistry and overnight stays under one roof.";
+  "Compassionate veterinary medicine for dogs and cats in Kimball, Michigan — wellness exams, surgery, dentistry and preventive care.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -65,7 +65,7 @@ function Index() {
         <section className="relative isolate min-h-[92vh] overflow-hidden">
           <img
             src={clinicBuilding}
-            alt="Exterior of the Wagmore veterinary clinic and boarding kennel at golden hour"
+            alt="Exterior of the Wadhams Road Animal Clinic building at golden hour"
             width={1920}
             height={1088}
             className="absolute inset-0 -z-20 h-full w-full object-cover"
@@ -74,8 +74,8 @@ function Index() {
 
           <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-background">
             <a href="#top" className="font-display text-xl font-semibold tracking-tight">
-              Wagmore
-              <span className="opacity-70"> Vet &amp; Boarding</span>
+              Wadhams Road
+              <span className="opacity-70"> Animal Clinic</span>
             </a>
             <nav className="hidden gap-8 text-sm md:flex">
               <a className="opacity-80 transition-opacity hover:opacity-100" href="#services">
@@ -93,19 +93,19 @@ function Index() {
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pt-16 pb-24 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
             <div className="text-background">
               <p className="text-sm tracking-[0.22em] uppercase opacity-75">
-                Clinic &amp; kennel · Est. 2009
+                Full-service veterinary clinic · Kimball, MI
               </p>
               <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
-                Steady hands for your pet, a quiet room when you travel.
+                Trusted care for the pets of Kimball and beyond.
               </h1>
               <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <a
-                  href="#visit"
+                <Link
+                  to="/visit"
                   className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
                 >
                   Book an appointment
-                </a>
+                </Link>
                 <a
                   href="#kennel"
                   className="inline-flex items-center rounded-full border border-background/50 px-7 py-3 text-sm font-semibold transition-colors hover:bg-background/15"
@@ -214,29 +214,35 @@ function Index() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-3">
             <div className="md:col-span-2">
               <h2 className="font-display text-3xl font-semibold md:text-4xl">
-                Visit the practice
+                Visit the clinic
               </h2>
               <p className="mt-4 max-w-md text-muted-foreground">
-                Call to book an exam or reserve a boarding suite. Holiday weeks fill up about a
-                month ahead.
+                Call to book an exam or reserve a boarding suite. Same-day sick visits are
+                available during open hours.
               </p>
+              <Link
+                to="/visit"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 mt-6 inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
+              >
+                Get directions
+              </Link>
             </div>
             <address className="space-y-3 text-sm not-italic">
-              <p className="font-semibold">Wagmore Veterinary &amp; Boarding</p>
+              <p className="font-semibold">Wadhams Road Animal Clinic</p>
               <p className="text-muted-foreground">
-                214 Millbrook Road
+                635 Wadhams Rd
                 <br />
-                Ashford, OR 97045
+                Kimball, MI 48074
               </p>
               <p>
-                <a className="hover:text-primary transition-colors" href="tel:+15035550142">
-                  (503) 555-0142
+                <a className="hover:text-primary transition-colors" href="tel:+18109876543">
+                  (810) 987-6543
                 </a>
               </p>
               <p className="text-muted-foreground">
-                Mon–Fri 7:30–18:00 · Sat 9:00–14:00
+                Wed &amp; Fri 9:00–15:00 · Thu &amp; Tue 8:00–12:00, 13:00–16:00
                 <br />
-                Boarding drop-off &amp; pick-up daily 8:00–17:00
+                Sat–Sun Closed
               </p>
             </address>
           </div>
@@ -244,7 +250,7 @@ function Index() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Wagmore Veterinary &amp; Boarding
+        © {new Date().getFullYear()} Wadhams Road Animal Clinic
       </footer>
     </div>
   );

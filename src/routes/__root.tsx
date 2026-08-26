@@ -77,15 +77,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Wagmore Veterinary & Boarding" },
+      { title: "Wadhams Road Animal Clinic" },
       {
         name: "description",
-        content: "Full-service veterinary care and premium dog boarding suites.",
+        content: "Full-service veterinary care in Kimball, Michigan.",
       },
-      { property: "og:title", content: "Wagmore Veterinary & Boarding" },
+      { property: "og:title", content: "Wadhams Road Animal Clinic" },
       {
         property: "og:description",
-        content: "Full-service veterinary care and premium dog boarding suites.",
+        content: "Full-service veterinary care in Kimball, Michigan.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
