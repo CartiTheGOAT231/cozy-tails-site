@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroVet from "@/assets/hero-vet.jpg";
 import clinicBuilding from "@/assets/clinic-building.jpg";
 import kennelSuite from "@/assets/kennel-suite.jpg";
 
-const TITLE = "Wagmore Veterinary & Boarding | Care and Kennel Suites";
+const TITLE = "Wadhams Road Animal Clinic | Veterinary Care in Kimball, MI";
 const DESCRIPTION =
-  "Compassionate veterinary medicine and calm, spacious boarding suites for dogs and cats — wellness exams, surgery, dentistry and overnight stays under one roof.";
+  "Compassionate veterinary medicine for dogs and cats in Kimball, Michigan — wellness exams, surgery, dentistry and preventive care.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
