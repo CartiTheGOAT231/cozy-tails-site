@@ -93,19 +93,19 @@ function Index() {
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pt-16 pb-24 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
             <div className="text-background">
               <p className="text-sm tracking-[0.22em] uppercase opacity-75">
-                Clinic &amp; kennel · Est. 2009
+                Full-service veterinary clinic · Kimball, MI
               </p>
               <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
-                Steady hands for your pet, a quiet room when you travel.
+                Trusted care for the pets of Kimball and beyond.
               </h1>
               <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <a
-                  href="#visit"
+                <Link
+                  to="/visit"
                   className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
                 >
                   Book an appointment
-                </a>
+                </Link>
                 <a
                   href="#kennel"
                   className="inline-flex items-center rounded-full border border-background/50 px-7 py-3 text-sm font-semibold transition-colors hover:bg-background/15"
