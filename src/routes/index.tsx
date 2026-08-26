@@ -65,7 +65,7 @@ function Index() {
         <section className="relative isolate min-h-[92vh] overflow-hidden">
           <img
             src={clinicBuilding}
-            alt="Exterior of the Wagmore veterinary clinic and boarding kennel at golden hour"
+            alt="Exterior of the Wadhams Road Animal Clinic building at golden hour"
             width={1920}
             height={1088}
             className="absolute inset-0 -z-20 h-full w-full object-cover"
@@ -74,8 +74,8 @@ function Index() {
 
           <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-background">
             <a href="#top" className="font-display text-xl font-semibold tracking-tight">
-              Wagmore
-              <span className="opacity-70"> Vet &amp; Boarding</span>
+              Wadhams Road
+              <span className="opacity-70"> Animal Clinic</span>
             </a>
             <nav className="hidden gap-8 text-sm md:flex">
               <a className="opacity-80 transition-opacity hover:opacity-100" href="#services">
