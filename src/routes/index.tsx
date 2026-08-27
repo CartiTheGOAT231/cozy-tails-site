@@ -93,6 +93,34 @@ function Index() {
             </address>
           </div>
         </section>
+
+        <section id="facebook" className="py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="mx-auto max-w-xl text-center">
+              <h2 className="font-display text-3xl font-semibold md:text-4xl">
+                Follow us on Facebook
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Stay up to date with clinic news, pet care tips, and adorable patient photos.
+              </p>
+            </div>
+            <div className="mt-10 flex justify-center">
+              <div className="w-full max-w-md overflow-hidden rounded-2xl border border-border shadow-sm">
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWadhamsRoadAnimalClinic%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                  width="100%"
+                  height="500"
+                  style={{ border: "none", overflow: "hidden" }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Wadhams Road Animal Clinic Facebook page"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
