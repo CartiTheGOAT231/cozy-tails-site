@@ -3,8 +3,7 @@ import clinicBuilding from "@/assets/clinic-building.jpg";
 import kennelSuite from "@/assets/kennel-suite.jpg";
 
 const TITLE = "Wadhams Road Animal Clinic | Veterinary Care in Kimball, MI";
-const DESCRIPTION =
-  "Compassionate veterinary medicine for dogs and cats in Kimball, Michigan — wellness exams, surgery, dentistry and preventive care.";
+const DESCRIPTION = "Your family is Our Family";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -95,7 +94,7 @@ function Index() {
                 Full-service veterinary clinic · Kimball, MI
               </p>
               <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
-                Trusted care for the pets of Kimball and beyond.
+                Wadhams Road Animal Clinic
               </h1>
               <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
               <div className="mt-9">
