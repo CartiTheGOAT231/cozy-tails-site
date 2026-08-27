@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroVet from "@/assets/hero-vet.jpg";
 import clinicBuilding from "@/assets/clinic-building.jpg";
 import kennelSuite from "@/assets/kennel-suite.jpg";
 
@@ -90,8 +89,8 @@ function Index() {
             </nav>
           </header>
 
-          <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pt-16 pb-24 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
-            <div className="text-background">
+          <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
+            <div className="max-w-2xl text-background">
               <p className="text-sm tracking-[0.22em] uppercase opacity-75">
                 Full-service veterinary clinic · Kimball, MI
               </p>
@@ -99,33 +98,14 @@ function Index() {
                 Trusted care for the pets of Kimball and beyond.
               </h1>
               <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
-              <div className="mt-9 flex flex-wrap gap-3">
+              <div className="mt-9">
                 <Link
                   to="/visit"
                   className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
                 >
                   Book an appointment
                 </Link>
-                <a
-                  href="#kennel"
-                  className="inline-flex items-center rounded-full border border-background/50 px-7 py-3 text-sm font-semibold transition-colors hover:bg-background/15"
-                >
-                  See boarding suites
-                </a>
               </div>
-            </div>
-            <div
-              className="hidden overflow-hidden rounded-[2rem] md:block"
-              style={{ boxShadow: "var(--shadow-soft)" }}
-            >
-              <img
-                src={heroVet}
-                alt="Veterinarian examining a golden retriever in a bright clinic room"
-                width={1408}
-                height={1008}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
             </div>
           </div>
         </section>
