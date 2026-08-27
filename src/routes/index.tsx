@@ -84,7 +84,9 @@ function Index() {
                 </a>
               </p>
               <p className="text-muted-foreground">
-                Wed &amp; Fri 9:00–15:00 · Thu &amp; Tue 8:00–12:00, 13:00–16:00
+                Wed &amp; Fri 9PM–3PM
+                <br />
+                Thu &amp; Tue 8AM–12PM, 1PM–4PM
                 <br />
                 Sat–Sun Closed
               </p>
