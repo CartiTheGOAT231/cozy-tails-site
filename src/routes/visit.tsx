@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/site-header";
 
 const TITLE = "Visit Us — Wadhams Road Animal Clinic";
 const DESCRIPTION =
