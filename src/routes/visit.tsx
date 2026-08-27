@@ -47,20 +47,7 @@ export const Route = createFileRoute("/visit")({
 function VisitPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <Link
-          to="/"
-          className="font-display text-xl font-semibold tracking-tight hover:opacity-80"
-        >
-          Wadhams Road Animal Clinic
-        </Link>
-        <Link
-          to="/"
-          className="inline-flex items-center rounded-full border border-border px-5 py-2 text-sm font-semibold transition-colors hover:bg-secondary"
-        >
-          Back home
-        </Link>
-      </header>
+      <SiteHeader variant="dark" />
 
       <main className="mx-auto max-w-6xl px-6 py-12 md:py-16">
         <div className="grid gap-12 md:grid-cols-2">
