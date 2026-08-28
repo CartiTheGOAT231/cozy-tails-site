@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { FacebookEmbed } from "@/components/facebook-embed";
 import { SiteHeader } from "@/components/site-header";
 import clinicBuilding from "@/assets/clinic-building.jpg";
 
@@ -36,7 +37,7 @@ function Index() {
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
             <div className="max-w-2xl text-background">
               <p className="text-sm tracking-[0.22em] uppercase opacity-75">
-                Full-service veterinary clinic · Kimball, MI
+                635 Wadhams Road, Kimball MI 48074
               </p>
               <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
                 Wadhams Road Animal Clinic
@@ -106,7 +107,7 @@ function Index() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+              <div className="w-full max-w-3xl overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
                 <div className="flex items-center gap-3 border-b border-border px-5 py-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white">
                     <svg
@@ -124,19 +125,7 @@ function Index() {
                     <p className="text-xs text-muted-foreground">@WadhamsRoadAnimalClinic</p>
                   </div>
                 </div>
-                <div className="relative aspect-[4/5] w-full bg-muted">
-                  <iframe
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWadhamsRoadAnimalClinic%2F&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                    width="100%"
-                    height="100%"
-                    style={{ position: "absolute", inset: 0, border: "none" }}
-                    scrolling="no"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    title="Wadhams Road Animal Clinic Facebook page"
-                  />
-                </div>
+                <FacebookEmbed />
                 <div className="border-t border-border px-5 py-4 text-center">
                   <a
                     href="https://www.facebook.com/WadhamsRoadAnimalClinic/"
