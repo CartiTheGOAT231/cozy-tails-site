@@ -94,7 +94,7 @@ function Index() {
           </div>
         </section>
 
-        <section id="facebook" className="py-20">
+        <section id="facebook" className="bg-secondary/40 py-20">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-xl text-center">
               <h2 className="font-display text-3xl font-semibold md:text-4xl">
@@ -104,19 +104,58 @@ function Index() {
                 Stay up to date with clinic news, pet care tips, and adorable patient photos.
               </p>
             </div>
+
             <div className="mt-10 flex justify-center">
-              <div className="w-full max-w-md overflow-hidden rounded-2xl border border-border shadow-sm">
-                <iframe
-                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWadhamsRoadAnimalClinic%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                  width="100%"
-                  height="500"
-                  style={{ border: "none", overflow: "hidden" }}
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  title="Wadhams Road Animal Clinic Facebook page"
-                />
+              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+                <div className="flex items-center gap-3 border-b border-border px-5 py-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="h-5 w-5"
+                      aria-hidden="true"
+                    >
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-sm font-semibold">Wadhams Road Animal Clinic</p>
+                    <p className="text-xs text-muted-foreground">@WadhamsRoadAnimalClinic</p>
+                  </div>
+                </div>
+                <div className="relative aspect-[4/5] w-full bg-muted">
+                  <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWadhamsRoadAnimalClinic%2F&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="100%"
+                    height="100%"
+                    style={{ position: "absolute", inset: 0, border: "none" }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title="Wadhams Road Animal Clinic Facebook page"
+                  />
+                </div>
+                <div className="border-t border-border px-5 py-4 text-center">
+                  <a
+                    href="https://www.facebook.com/WadhamsRoadAnimalClinic/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#1877F2] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#166fe5]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="h-4 w-4"
+                      aria-hidden="true"
+                    >
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                    Visit us on Facebook
+                  </a>
+                </div>
               </div>
             </div>
           </div>
