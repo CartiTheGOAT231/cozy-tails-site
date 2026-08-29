@@ -41,7 +41,7 @@ export function SiteHeader({ variant = "light" }: SiteHeaderProps) {
           Boarding
         </Link>
         <Link to="/visit" className="opacity-80 transition-opacity hover:opacity-100">
-          Visit
+          Contact Us
         </Link>
       </nav>
     </header>
