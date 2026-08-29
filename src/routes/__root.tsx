@@ -80,12 +80,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Wadhams Road Animal Clinic" },
       {
         name: "description",
-        content: "Full-service veterinary care in Kimball, Michigan.",
+        content: "635 Wadhams Road, Kimball MI 48074",
       },
       { property: "og:title", content: "Wadhams Road Animal Clinic" },
       {
         property: "og:description",
-        content: "Full-service veterinary care in Kimball, Michigan.",
+        content: "635 Wadhams Road, Kimball MI 48074",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

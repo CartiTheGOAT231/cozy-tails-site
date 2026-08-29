@@ -31,6 +31,9 @@ export function SiteHeader({ variant = "light" }: SiteHeaderProps) {
         </span>
       </Link>
       <nav className="hidden gap-8 text-sm md:flex">
+        <Link to="/about" className="opacity-80 transition-opacity hover:opacity-100">
+          About Us
+        </Link>
         <Link
           to="/boarding"
           className="opacity-80 transition-opacity hover:opacity-100"
