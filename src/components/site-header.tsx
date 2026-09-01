@@ -31,16 +31,16 @@ export function SiteHeader({ variant = "light" }: SiteHeaderProps) {
         </span>
       </Link>
       <nav className="hidden gap-8 text-sm md:flex">
-        <Link to="/about" className="opacity-80 transition-opacity hover:opacity-100">
+        <Link to="/about" className="opacity-90 transition-opacity hover:opacity-100 text-shadow-hero">
           About Us
         </Link>
         <Link
           to="/boarding"
-          className="opacity-80 transition-opacity hover:opacity-100"
+          className="opacity-90 transition-opacity hover:opacity-100 text-shadow-hero"
         >
           Boarding
         </Link>
-        <Link to="/visit" className="opacity-80 transition-opacity hover:opacity-100">
+        <Link to="/visit" className="opacity-90 transition-opacity hover:opacity-100 text-shadow-hero">
           Contact Us
         </Link>
       </nav>
