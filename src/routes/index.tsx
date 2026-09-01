@@ -35,7 +35,7 @@ function Index() {
           <SiteHeader variant="light" />
 
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
-            <div className="max-w-2xl text-background">
+            <div className="text-background inline-block max-w-2xl rounded-[2rem] border border-background/20 bg-bark/35 px-8 py-9 shadow-soft backdrop-blur-md md:px-10 md:py-11">
               <p className="text-sm tracking-[0.22em] uppercase opacity-75">
                 635 Wadhams Road, Kimball MI 48074
               </p>
@@ -53,6 +53,7 @@ function Index() {
               </div>
             </div>
           </div>
+
         </section>
 
         <section id="visit" className="bg-secondary/60 border-t border-border py-20">
