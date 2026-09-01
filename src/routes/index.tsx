@@ -20,8 +20,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground">
-      <main id="top">
+    <div className="flex min-h-screen flex-col bg-background font-sans text-foreground">
+      <main id="top" className="flex-grow">
         <section className="relative isolate min-h-[92vh] overflow-hidden">
           <img
             src={clinicBuilding}
