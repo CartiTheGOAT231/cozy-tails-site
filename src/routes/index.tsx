@@ -30,19 +30,19 @@ function Index() {
             height={1088}
             className="absolute inset-0 -z-20 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bark/90 via-bark/70 to-bark/25" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bark/95 via-bark/80 to-bark/35" />
 
           <SiteHeader variant="light" />
 
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
             <div className="max-w-2xl text-background">
-              <p className="text-sm tracking-[0.22em] uppercase opacity-75">
+              <p className="text-sm tracking-[0.22em] uppercase opacity-90 text-shadow-hero">
                 635 Wadhams Road, Kimball MI 48074
               </p>
-              <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
+              <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance text-shadow-hero md:text-6xl">
                 Wadhams Road Animal Clinic
               </h1>
-              <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
+              <p className="mt-6 max-w-md text-lg opacity-95 text-shadow-hero">{DESCRIPTION}</p>
               <div className="mt-9">
                 <Link
                   to="/visit"
