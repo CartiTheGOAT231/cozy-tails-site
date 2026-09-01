@@ -163,7 +163,7 @@ function Index() {
         </section>
       </main>
 
-      <footer className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
+      <footer className="mx-auto mt-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
         © {new Date().getFullYear()} Wadhams Road Animal Clinic
       </footer>
     </div>
