@@ -20,8 +20,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground">
-      <main id="top">
+    <div className="flex min-h-screen flex-col bg-background font-sans text-foreground">
+      <main id="top" className="flex-grow">
         <section className="relative isolate min-h-[92vh] overflow-hidden">
           <img
             src={clinicBuilding}
@@ -119,7 +119,7 @@ function Index() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <div className="w-full max-w-5xl overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
                 <div className="flex items-center gap-3 border-b border-border px-5 py-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white">
                     <svg
@@ -163,7 +163,7 @@ function Index() {
         </section>
       </main>
 
-      <footer className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
+      <footer className="mx-auto mt-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground">
         © {new Date().getFullYear()} Wadhams Road Animal Clinic
       </footer>
     </div>
