@@ -30,23 +30,34 @@ function Index() {
             height={1088}
             className="absolute inset-0 -z-20 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bark/90 via-bark/70 to-bark/25" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bark/95 via-bark/75 to-bark/35" />
 
           <SiteHeader variant="light" />
 
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24">
-            <div className="text-background inline-block max-w-2xl rounded-[2rem] border border-background/20 bg-bark/35 px-8 py-9 shadow-soft backdrop-blur-md md:px-10 md:py-11">
-              <p className="text-sm tracking-[0.22em] uppercase opacity-75">
+            <div className="text-background inline-block max-w-2xl pt-4">
+              <p
+                className="text-sm tracking-[0.22em] uppercase opacity-90"
+                style={{ textShadow: "0 2px 10px rgba(0,0,0,0.45)" }}
+              >
                 635 Wadhams Road, Kimball MI 48074
               </p>
-              <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
+              <h1
+                className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl"
+                style={{ textShadow: "0 3px 18px rgba(0,0,0,0.55)" }}
+              >
                 Wadhams Road Animal Clinic
               </h1>
-              <p className="mt-6 max-w-md text-lg opacity-85">{DESCRIPTION}</p>
+              <p
+                className="mt-6 max-w-md text-lg font-medium opacity-95"
+                style={{ textShadow: "0 2px 12px rgba(0,0,0,0.5)" }}
+              >
+                {DESCRIPTION}
+              </p>
               <div className="mt-9">
                 <Link
                   to="/visit"
-                  className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold transition-colors"
+                  className="bg-background text-foreground hover:bg-clay inline-flex items-center rounded-full px-7 py-3 text-sm font-semibold shadow-lg transition-colors"
                 >
                   Book an appointment
                 </Link>
