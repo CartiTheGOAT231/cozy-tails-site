@@ -119,7 +119,7 @@ function Index() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <div className="w-full max-w-5xl overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+              <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
                 <div className="flex items-center gap-3 border-b border-border px-5 py-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white">
                     <svg
