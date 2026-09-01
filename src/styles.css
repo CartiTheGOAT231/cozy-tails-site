@@ -147,6 +147,10 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@utility text-shadow-hero {
+  text-shadow: 0 2px 14px oklch(0.38 0.028 62 / 0.55);
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
