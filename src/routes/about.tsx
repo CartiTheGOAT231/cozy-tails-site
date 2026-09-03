@@ -34,10 +34,6 @@ function AboutPage() {
               <h1 className="font-display mt-5 text-4xl leading-[1.08] font-semibold text-balance md:text-6xl">
                 About us
               </h1>
-              <p className="mt-6 max-w-md text-lg opacity-85">
-                Your family is Our Family — it&apos;s not just a motto, it&apos;s how we
-                practice medicine.
-              </p>
             </div>
           </div>
         </section>
