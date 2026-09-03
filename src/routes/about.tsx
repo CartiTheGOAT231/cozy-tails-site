@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
+import clinicLogo from "@/assets/clinic-logo.png";
 
 const TITLE = "About Us — Wadhams Road Animal Clinic";
 const DESCRIPTION =
