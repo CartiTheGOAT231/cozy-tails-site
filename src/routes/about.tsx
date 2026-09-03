@@ -39,29 +39,26 @@ function AboutPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid items-start gap-12 md:grid-cols-2">
-            <div>
+          <div className="grid gap-12 md:grid-cols-2">
+            <div className="border-border bg-card flex flex-col rounded-2xl border p-7 shadow-soft md:p-10">
               <h2 className="font-display text-3xl font-semibold md:text-4xl">
                 Our Mission: Provide High Quality Care and Exceptional Service in a Safe
                 Learning Environment.
               </h2>
-
-              <div className="border-border bg-card mt-8 rounded-2xl border p-7 shadow-soft md:p-10">
-                <p className="leading-relaxed text-muted-foreground">
-                  Wadhams Road Animal Clinic was founded in 1974 by Dr. Joseph Roehl. The
-                  facility was owned and operated for over twenty years by Dr. Roehl. The
-                  practice was purchased by Dr. Eric Saunders on May 1, 1996. New
-                  construction of the Wadhams Road Animal Care Center began April 2006 and
-                  completed on December 15, 2006. We now offer a full range of veterinary
-                  care and hospital services, boarding/kenneling, grooming and retail
-                  services in the roughly 10,000 sq. ft. building. We are proud to be
-                  members of the Michigan Veterinary Medical Association, American
-                  Veterinary Medical Association, and Marysville Chamber of Commerce. We
-                  take an active supportive role in the County 4-H, local school seminars,
-                  student career days, in clinic student mentoring, and philanthropy
-                  activities in the area.
-                </p>
-              </div>
+              <p className="leading-relaxed text-muted-foreground mt-6 flex-grow">
+                Wadhams Road Animal Clinic was founded in 1974 by Dr. Joseph Roehl. The
+                facility was owned and operated for over twenty years by Dr. Roehl. The
+                practice was purchased by Dr. Eric Saunders on May 1, 1996. New
+                construction of the Wadhams Road Animal Care Center began April 2006 and
+                completed on December 15, 2006. We now offer a full range of veterinary
+                care and hospital services, boarding/kenneling, grooming and retail
+                services in the roughly 10,000 sq. ft. building. We are proud to be
+                members of the Michigan Veterinary Medical Association, American
+                Veterinary Medical Association, and Marysville Chamber of Commerce. We
+                take an active supportive role in the County 4-H, local school seminars,
+                student career days, in clinic student mentoring, and philanthropy
+                activities in the area.
+              </p>
             </div>
 
             <div className="bg-card border-border flex items-center justify-center rounded-2xl border p-12 shadow-soft">
